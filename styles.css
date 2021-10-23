@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  --black: hsla(240, 6%, 13%, 1);
+  --grey-white: hsl(240, 9%, 89%);
+  --grey: hsla(240, 9%, 89%, 1);
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: #121214;
+  background-image: url(./images/background-desktop.png);
+  background-position: center;
+  background-size: cover;
+}
+
+main {
+  width: 358px;
+  height: 540px;
+  margin: auto;
+  background: #202024;
+  color: var(--grey-white);
+  border-radius: 7px;
+}
+/* 262 x 475 */
+
+.gradient {
+  background: url(./images/mask.png);
+  position: absolute;
+  width: 358px;
+  height: 540px;
+  color: var(--grey-white);
+  border-radius: 7px;
+}
+
+.broken {
+  position: absolute;
+  background: #121214;
+  z-index: 1;
+  width: 100px;
+  height: 12px;
+  margin-left: 8.3rem;
+  margin-top: 1.5rem;
+  border-radius: 1.5rem;
+}
+
+.ribbon {
+  position: absolute;
+  z-index: 2;
+  width: 80px;
+  height: 750px;
+  background: linear-gradient(161.24deg, #ff008e -15.25%, #ffcd1e 111.89%);
+  top: 0;
+  margin-top: -45rem;
+  margin-left: 8.9rem;
+}
+
+.container {
+  max-width: 358px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--grey);
+  margin-top: -7rem;
+}
+
+.avatar {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  margin-top: -15px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #c4c4cc;
+  text-decoration: none;
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+/* 
+li:hover {
+  background-color: yellow;
+} */
+
+.hover-git:hover {
+  color: yellow;
+}
+
+p {
+  margin: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+
+  align-items: center;
+}
+
+ul {
+  margin-top: 2.5rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+ul a {
+  transition: 0.3s;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 21%, 100% 79%, 50% 100%, 0 79%, 0 21%);
+}
+
+ul a:hover {
+  transform: translateY(-8px);
+}
+
+@media (min-width: 800px) {
+  main {
+    width: 358px;
+    height: 540px;
+
+    background-color: #202024;
+    background-size: 358px 540px;
+  }
+}
